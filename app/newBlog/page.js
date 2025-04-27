@@ -10,7 +10,7 @@ export default function newBlog() {
 
   async function submit(){
     try{
-      let res =await fetch('http://localhost:5000/newblog', {
+      let res =await fetch('https://back-12ec.onrender.com/newblog', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
