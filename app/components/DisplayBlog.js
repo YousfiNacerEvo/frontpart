@@ -9,7 +9,7 @@ export default function DisplayBlog() {
   useEffect(() => {
     async function getBlog() {
       try {
-        let res = await fetch('https://back-12ec.onrender.com/getBlog', {
+        let res = await fetch('/api/getBlog', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json'

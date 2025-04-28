@@ -1,4 +1,3 @@
-
 "use client"
 import React from 'react'
 
@@ -10,7 +9,7 @@ export default function newBlog() {
 
   async function submit(){
     try{
-      let res =await fetch('https://back-12ec.onrender.com/newblog', {
+      let res =await fetch('/api/newblog', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
